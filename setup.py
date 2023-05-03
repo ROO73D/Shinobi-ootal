@@ -9,6 +9,7 @@ string = '1BVtsOKQBu7UlY0bzPcLVUeE59IjM9R5Ltmsw1OvZ3yKWpLjbTl0SOeTrN35HwaiJGmYz5
 
 client = TelegramClient(StringSession(string), api_id, api_hash)
 
+print('Auth finished ')
 @client.on(events.NewMessage(chats=-1001803068113))
 async def newMessageListener(event):
     msg = event.message

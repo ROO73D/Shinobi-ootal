@@ -17,5 +17,5 @@ async def newMessageListener(event):
       print(link)
       await client.send_message(-1001932519430,link)
 
-async with client:
-  asyncio.run(client.run_until_disconnected())
+with client:
+  client.run_until_disconnected()

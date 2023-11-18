@@ -32,13 +32,13 @@ string = '1BVtsOLEBuyGiGM_RjIKROF55DZ8pcXlagi_qRb8Tlubga1crWxPdk3GEWC6P5zYV-r8Oa
 client = TelegramClient(StringSession(string), api_id, api_hash)
 
 print('Auth finished ')
-@client.on(events.NewMessage(chats=-1001982143443))
+@client.on(events.NewMessage(chats=[-1001982143443,-1001869117562]))
 async def newMessageListener(event):
     msg = event.message
     if 'https' in msg.message:
       link = re.search(r'https:\/\/[a-zA-Z.\/1-90]+',msg.message).group(0)
       print(link)
-      await client.send_message(-1004046178315,link)
+      await client.send_message(-1001999152304,link)
 
-with client:
-  client.run_until_disconnected()
+async with client:
+  await client.run_until_disconnected()

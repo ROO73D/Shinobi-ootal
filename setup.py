@@ -40,5 +40,5 @@ async def newMessageListener(event):
       print(link)
       await client.send_message(-1001999152304,link)
 
-async with client:
-  await client.run_until_disconnected()
+with client:
+    client.run_until_disconnected()

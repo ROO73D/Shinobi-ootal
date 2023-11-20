@@ -28,11 +28,11 @@ import re
 
 api_id = 17484143
 api_hash = 'b8c86dc2857d25f9b6c9af2e48739bfa'
-string = '1BVtsOIcBu6ME5nlqMUB5DJL-dtZsjJs2t2f4UhDR7NAFMzmGwWu4GdHxLop_IeEnJXnSF1PBBIBxlGzLtcaCFEs_QMUGS-BQ5iu_NguvtXqmdPIt5n_2rY1ippqgjmDOEUYtIRnUnqXEdvCgLMG9LWmZ5lTYFvzJtKWadftSD2RnEllmOd4ZHHJzNQ0WS4nUmfhQnyEx_7ESJdJBRm1H6SI3CitOixtaWMXLo-YFoh9DWICG3XOpr5PUf9thxvJ-3RTsHe15Ry_uA7lZPEATH8VB6ZCHWn7EYGi8th1eZhlbW0432FFJht8A--09fDPvxt90Q4X9xuGQApevppmQaVMmYZd5YC8='
+string = '1BVtsOJQBu7hv4E0VETwD5-zm9bWtl4q90nQWIHZ5O1TlKvlIxkxIrEh16SQK857V8Wx6UTTLtUiHSGb98kP6NtXpe5nGbg7tbB21wXKe4ARPMvRzx5yK4k7_lGvNAuZJq1lDbQcNWqlxetD7XXW6e6kmxaehoHeDN2hSYvGIPQw-JlZKyRU0kmb3RbEOTgOlxsBuE7lWJKQgC9JKDmNJF0SkBHISNAFjT0tyBMnMiDDM5y7HxMAZA4XplFaDb3zEl6UkoAw8wUawy8xGyo5I3--0xOwGzObE3H9h1vgxcQDaP0rIA4ULnO3vFIVyxjf3aAtHU4m5Rugc6VA6Qo1TpKxHfYRtubw='
 client = TelegramClient(StringSession(string), api_id, api_hash)
 
 print('Auth finished ')
-@client.on(events.NewMessage(chats=[-1001982143443,-1001869117562]))
+@client.on(events.NewMessage(chats=[-1001982143443,-1001768742734,-1001869117562]))
 async def newMessageListener(event):
     msg = event.message
     if 'https' in msg.message:

@@ -32,7 +32,7 @@ string = '1BVtsOJQBu5FlwVQJbiUOtX5VYXdG7NE1vywqE7h9BSzMupmjk6WTcV5dPbniRUBaNB_Yk
 client = TelegramClient(StringSession(string), api_id, api_hash)
 
 print('Auth finished ')
-@client.on(events.NewMessage(chats=[-1001982143443,-1001869117562,-1001665768915,-1001501537847,-1001568323849,-1002107400730]))
+@client.on(events.NewMessage(chats=[-1001768742734,-1001982143443,-1001869117562,-1001665768915,-1001501537847,-1001568323849,-1002107400730]))
 async def newMessageListener(event):
     movie = event.message.text
     if 'http' in movie:

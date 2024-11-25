@@ -32,7 +32,7 @@ string = '1BVtsOJoBu3X4YeOMIoD8_CE1sELBCNAgwWnr-vBxXONqQ8-4sr9pnvLH8ENOJdPiO8RqX
 client = TelegramClient(StringSession(string), api_id, api_hash)
 print('Auth finished')
 
-@client.on(events.NewMessage(chats=[-1001983705786, -1002033680699, -1001768742734, 
+@client.on(events.NewMessage(chats=[-1001761846215,-1001257324559,-1001578622629,-1002029791549, -1002033680699, -1001768742734, 
                                     -1001982143443, -1001869117562, -1001665768915, 
                                     -1001501537847, -1001568323849, -1002107400730]))
 async def newMessageListener(event):
